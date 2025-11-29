@@ -5,7 +5,7 @@ import { requestForegroundPermissionsAsync, getCurrentPositionAsync, LocationObj
 import MapView, { Marker } from 'react-native-maps';
 import { getParadas } from '../../api/olhoVivo'; // Importar a função de busca
 import CustomMarker from '../../components/CustomMarker';
-
+//ajustei o CSS
 const { height } = Dimensions.get('window');
 
 type Parada = {
@@ -33,7 +33,7 @@ export default function HomeScreen() {
           latitude: currentPosition.coords.latitude,
           longitude: currentPosition.coords.longitude,
         },
-        zoom: 15,
+        zoom: 15 ,
       });
 
       watchPositionAsync({
